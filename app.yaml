@@ -1,0 +1,30 @@
+application: hueng-lecinfo-bot
+version: 1
+runtime: php
+api_version: 1
+threadsafe: yes
+
+handlers:
+- url: /favicon\.ico
+  static_files: favicon.ico
+  upload: favicon\.ico
+
+- url: /bot.php
+  script: bot.php
+  login: admin
+
+- url: /config.php
+  script: config.php
+  login: admin
+
+- url: /kimono.php
+  script: kimono.php
+  login: admin
+
+- url: /OAuth.php
+  script: OAuth.php
+  login: admin
+
+- url: /twitteroauth.php
+  script: twitteroauth.php
+  login: admin
